@@ -24,8 +24,9 @@ a:visited {
 	color: #5F5F5F;
 }
 
-/*Structure*/
+/*Max-Width 1140px*/
 
+@media (min-width: 1565px){
 #portrait {
 	background-image: url('collage_XL.jpg');
 	background-size: cover;
@@ -38,15 +39,6 @@ a:visited {
 	overflow: hidden;
 	position: absolute;
 	display: block;
-}
-
-#social {
-	height: 300px;
-	width: 50px;
-	border: 2px solid yellow;
-	overflow: hidden;
-	float: right;
-
 }
 
 #content {
@@ -71,18 +63,89 @@ a:visited {
 	width: 100%;
 	overflow: scroll;
 }
+}
 
-/*Header*/
+@media (min-width: 1000px){
+#portrait {
+	background-image: url('collage_L.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 100%;
+	width: 55%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	display: block;
+}
 
+#content {
+	height: 100%;
+	width: 44%;
+	display: block;
+	float: right;
+	overflow: hidden;
+}
+
+#top {
+	/*border: 2px solid red;*/
+	height: 200px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+#bottom {
+	/*border: 2px solid blue;*/
+	height: 650px;
+	width: 100%;
+	overflow: scroll;
+}	
+}
+
+/*Small Screens*/
+@media (max-width: 999px){
+#portrait {
+	background-image: url('minicollage.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 300px;
+	width:100%;
+	display: block;
+	overflow: hidden;
+}
+#content {
+	height: 100%;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+
+}
+
+#top {
+	/*border: 2px solid red;*/
+	height: 200px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+#bottom {
+	/*border: 2px solid blue;*/
+	height: 650px;
+	width: 100%;
+	overflow: scroll;
+	margin-left: 5%;
+}	
 #top h1 {
 	font-family: Verdana, Georgia;
 	font-size: 50px;
 	letter-spacing: 15px;
 	font-weight: normal;
-	padding: 20px 20px 0px 50px;
+	padding: 20px 20px 0px 20px;
 }
 
-/*Navigation Bar*/
 #top ul {
 	display: inline-flex;
 	list-style: none;
@@ -97,12 +160,38 @@ a:visited {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
+#bottom ul {
+	padding: 0px 0px 0px 12%;
+}
+}
+
+/*Header*/
+
+#top h1 {
+	font-family: Verdana, Georgia;
+	font-size: 50px;
+	letter-spacing: 15px;
+	font-weight: normal;
+	padding: 20px 20px 0px 22%;
+}
+
+/*Navigation Bar*/
+#top ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-left: 25%;
+}
+
+#top li {
+	padding: 5px 20px 0px 35px;
+	font-family: Georgia-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
 
 /*Bottom Content*/
-
-#bottom img {
-	padding-top: 6%;
-}
 
 #bottom h1 {
 	font-family: Verdana, Georgia;
