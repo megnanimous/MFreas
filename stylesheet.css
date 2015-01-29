@@ -1,0 +1,138 @@
+/*Meghan Freas's personal site, created by Meghan Freas*/
+
+/*General*/
+
+body {
+	background: #ffffff;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia-serif, Times New Roman;
+	font-size: 18px;
+
+}
+
+a:link {
+	text-decoration: none;
+	color: #5F5F5F;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:visited {
+	color: #5F5F5F;
+}
+
+/*Structure*/
+
+#portrait {
+	background-image: url('collage_XL.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top left;
+	height: 100%;
+	width: 55%;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	display: block;
+}
+
+#social {
+	height: 300px;
+	width: 50px;
+	border: 2px solid yellow;
+	overflow: hidden;
+	float: right;
+
+}
+
+#content {
+	height: 100%;
+	width: 44%;
+	display: block;
+	float: right;
+	overflow: hidden;
+}
+
+#top {
+	/*border: 2px solid red;*/
+	height: 200px;
+	width: 100%;
+	display: block;
+	overflow: hidden;
+}
+
+#bottom {
+	/*border: 2px solid blue;*/
+	height: 650px;
+	width: 100%;
+	overflow: scroll;
+}
+
+/*Header*/
+
+#top h1 {
+	font-family: Verdana, Georgia;
+	font-size: 50px;
+	letter-spacing: 15px;
+	font-weight: normal;
+	padding: 20px 20px 0px 50px;
+}
+
+/*Navigation Bar*/
+#top ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-left: 5%;
+}
+
+#top li {
+	padding: 5px 20px 0px 35px;
+	font-family: Georgia-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+/*Bottom Content*/
+
+#bottom img {
+	padding-top: 6%;
+}
+
+#bottom h1 {
+	font-family: Verdana, Georgia;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 3%;
+}
+
+#bottom p {
+	padding-left: 10%;
+	padding-right: 18%;
+
+}
+
+#bottom ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 2%;
+}
+
+#bottom li {
+	padding: 0px 0px 0px 40px;
+}
+
+
+
+
+
+
+
+
