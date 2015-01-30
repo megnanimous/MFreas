@@ -24,7 +24,7 @@ a:visited {
 	color: #5F5F5F;
 }
 
-/*Max-Width 1140px*/
+/*Large Screens*/
 
 @media (min-width: 1565px){
 #portrait {
@@ -63,9 +63,61 @@ a:visited {
 	width: 100%;
 	overflow: scroll;
 }
+
+#top h1 {
+	font-family: Verdana, Georgia;
+	font-size: 50px;
+	letter-spacing: 15px;
+	font-weight: normal;
+	padding: 0% 0% 0% 8%;
 }
 
-@media (min-width: 1000px){
+#top ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-left: 14%;
+}
+
+#top li {
+	padding: 5px 20px 0px 35px;
+	font-family: Georgia-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+#bottom h1 {
+	font-family: Verdana, Georgia;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 3%;
+}
+
+#bottom p {
+	padding-left: 10%;
+	padding-right: 18%;
+
+}
+
+#bottom ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 2%;
+}
+
+#bottom li {
+	padding: 0px 0px 0px 40px;
+}
+}
+
+
+
+/*Medium Screens*/
+
+@media (min-width: 900px) and (max-width: 1565px){
 #portrait {
 	background-image: url('collage_L.jpg');
 	background-size: cover;
@@ -101,11 +153,62 @@ a:visited {
 	height: 650px;
 	width: 100%;
 	overflow: scroll;
-}	
 }
 
+#top h1 {
+	font-family: Verdana, Georgia;
+	font-size: 36px;
+	letter-spacing: 15px;
+	font-weight: normal;
+	padding: 20px 20px 0px 8%;
+}
+
+#top ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-left: 3%;
+}
+
+#top li {
+	padding: 5px 20px 0px 35px;
+	font-family: Georgia-serif;
+	font-size: 16px;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+#bottom h1 {
+	font-family: Verdana, Georgia;
+	font-size: 20px;
+	font-weight: normal;
+	margin-left: 3%;
+}
+
+#bottom p {
+	padding-left: 10%;
+	padding-right: 18%;
+
+}
+
+#bottom ul {
+	display: inline-flex;
+	list-style: none;
+	text-align: center;
+	margin-top: 5px;
+	margin-left: 2%;
+}
+
+#bottom li {
+	padding: 0px 0px 0px 40px;
+}
+}
+
+
+
+
+
 /*Small Screens*/
-@media (max-width: 999px){
+@media (max-width: 900px){
 #portrait {
 	background-image: url('minicollage.jpg');
 	background-size: cover;
@@ -160,38 +263,6 @@ a:visited {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-#bottom ul {
-	padding: 0px 0px 0px 12%;
-}
-}
-
-/*Header*/
-
-#top h1 {
-	font-family: Verdana, Georgia;
-	font-size: 50px;
-	letter-spacing: 15px;
-	font-weight: normal;
-	padding: 20px 20px 0px 22%;
-}
-
-/*Navigation Bar*/
-#top ul {
-	display: inline-flex;
-	list-style: none;
-	text-align: center;
-	margin-left: 25%;
-}
-
-#top li {
-	padding: 5px 20px 0px 35px;
-	font-family: Georgia-serif;
-	font-size: 16px;
-	letter-spacing: 2px;
-	text-transform: uppercase;
-}
-
-/*Bottom Content*/
 
 #bottom h1 {
 	font-family: Verdana, Georgia;
@@ -217,6 +288,10 @@ a:visited {
 #bottom li {
 	padding: 0px 0px 0px 40px;
 }
+}
+
+
+
 
 
 
