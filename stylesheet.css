@@ -208,7 +208,7 @@ a:visited {
 
 
 /*Small Screens*/
-@media (max-width: 900px){
+@media handheld (max-width: 900px){
 #portrait {
 	background-image: url('minicollage.jpg');
 	background-size: cover;
