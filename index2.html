@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta name="title" content="Meghan Freas">
+	<meta name="description" content="The personal website of Meghan Freas.">
+	<meta charset="UTF-8">
+	<meta name="author" content="Meghan Freas">
+	<meta name="viewpoint" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="stylesheet2.css"/>
+<title>Meghan Freas</title>
+</head>
+<body>
+	<div id="page">
+		<nav id="navigation">
+			<div id="transparency"></div>
+			<ul class="menu-left">
+				<li><a href="#about" class="smoothScroll">About</a></li>
+				<li><a href="#portfolio" class="smoothScroll">Portfolio</a></li>
+			</ul>
+			<ul class="menu-right">
+				<li><a href="#contact" class="smoothScroll">Contact</a></li>
+				<li><a href="http://www.megnanimously.com" target="_blank">Blog</a></li>
+			</ul>
+			<div id="logo">
+			</div>
+		</nav>
+
+		<section id="splash">
+			<div id="container-splash">
+				<div id="content-wrapper">
+					<h1>Hey, I'm <span class="span-h1">Meghan</span>.</h1>
+					<h2>Native Delawarean, biology enthusiast, part-time coder &amp; full-time <span class="span-h2">expat</span>.</h2>
+					<h2>I moved to <span class="span-h2">Berlin</span>, Germany in 2014 to find adventure &amp; career opportunities.</h2>
+					<h2>Being a <i>Hausfrau</i> is cool, but now...</h2>
+				</div>
+			</div>
+		</section>
+
+		<section id="about">
+			<div id="container">
+				<div id="content-wrapper">
+					<h1><span class="span-h1">I'm looking for a job.</span></h1>
+					<h2>I would love to make a simple, functional &amp; creative website for you!</h2>
+					<h2>Even though I am new to coding for money, I've been doing it for fun since the days of Geocities and MySpace.</h2>
+			</div>
+			</div>
+		</section>
+
+		<section id="portfolio">
+			<div id="container">
+				<div id="content-wrapper">
+					<h1>Here are some things I've worked on.</h1>
+				</div>
+			</div>	
+		</section>
+
+		<section id="contact">
+			<div id="container">
+				<div id="content-wrapper">
+					<h1>Let's get in touch!</h1>
+				</div>
+			</div>	
+		</section>
+	</div>
+
+	<footer>
+		&copy; Meghan Freas 2015
+	</footer>
+
+</div>
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+<script>
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 10) {
+			$('#navigation').addClass("sticky");
+		}
+		else {
+			$('#navigation').removeClass("sticky");
+		}
+	});
+</script>
+</body>
+</html>
