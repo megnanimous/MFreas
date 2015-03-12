@@ -252,6 +252,7 @@ $.smoothScroll.filterPath = function(string) {
 // default options
 $.fn.smoothScroll.defaults = defaults;
 
+
 function escapeSelector (str) {
   return str.replace(/(:|\.)/g,'\\$1');
 }

@@ -35,6 +35,13 @@ span.span-h2 {
 	text-align: center;
 }
 
+h3 {
+	font-family: "Gill Sans";
+	font-size: 14px;
+	color: #F46359;
+	text-align: center;
+}
+
 a:link {
 	text-decoration: none;
 	color: #ACACAC;
@@ -50,28 +57,41 @@ a:visited {
 
 /* Structure */
 
-#page {
+.main {
 	height: 100%;
 	border: 1px solid transparent;
 }
 
-#content-wrapper {
+.main section .content-wrapper {
 	border: 1px solid;
 	height: 600px;
 	width: 70%;
-	margin-top: 75px;
+	margin-top: 250px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 50px;
 }
 
-#container-splash {
-	height: 800px;
+.main section#splash .content-wrapper-splash {
+	border: 1px solid;
+	height: 600px;
+	width: 70%;
+	margin-top: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+
+.main section#splash .container-splash {
+	height: 100%;
 	width: 100%;
 	background-color: #ffffff;
-	margin-top: 250px;
+	margin-top: 0px;
+/*	background-image: url('greyzz.png');*/
+	display: inline-block;
 }
 
-#container {
+.main section .container {
 	height: 800px;
 	width: 100%;
 	background-color: #ffffff;
@@ -179,7 +199,43 @@ nav ul li a {
 	transition: all 0.4s ease;
 }
 
+/* Contact */
 
+.main section#contact ul#social-icons {
+	list-style: none;
+	height: 100px;
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 8%;
+	vertical-align: middle;
+}
 
+.main section#contact ul#social-icons li {
+	display: inline-block;
+	margin-right: 30px;
+	margin-top: 10px;
+}
 
+/* Footer */
+
+footer {
+	text-align: center;
+}
+
+/* Media */
+@media screen and (max-width: 800px) {
+
+	#navigation.sticky ul li a {
+	font-size: 20px;
+	font-family: "Gill Sans";
+	transition: all 0.4s ease;
+}
+
+#navigation.sticky #logo {
+	height: 70px;
+	width: 70px;
+	transition: all 0.4s ease;
+}
+}
 

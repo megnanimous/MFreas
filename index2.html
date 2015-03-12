@@ -10,7 +10,7 @@
 <title>Meghan Freas</title>
 </head>
 <body>
-	<div id="page">
+	<div class="main">
 		<nav id="navigation">
 			<div id="transparency"></div>
 			<ul class="menu-left">
@@ -26,9 +26,9 @@
 		</nav>
 
 		<section id="splash">
-			<div id="container-splash">
-				<div id="content-wrapper">
-					<h1>Hey, I'm <span class="span-h1">Meghan</span>.</h1>
+			<div class="container-splash">
+				<div class="content-wrapper-splash">
+					<h1>Hey, I'm <span class="span-h1">Meghan</span>:</h1>
 					<h2>Native Delawarean, biology enthusiast, part-time coder &amp; full-time <span class="span-h2">expat</span>.</h2>
 					<h2>I moved to <span class="span-h2">Berlin</span>, Germany in 2014 to find adventure &amp; career opportunities.</h2>
 					<h2>Being a <i>Hausfrau</i> is cool, but now...</h2>
@@ -37,8 +37,8 @@
 		</section>
 
 		<section id="about">
-			<div id="container">
-				<div id="content-wrapper">
+			<div class="container">
+				<div class="content-wrapper">
 					<h1><span class="span-h1">I'm looking for a job.</span></h1>
 					<h2>I would love to make a simple, functional &amp; creative website for you!</h2>
 					<h2>Even though I am new to coding for money, I've been doing it for fun since the days of Geocities and MySpace.</h2>
@@ -47,39 +47,59 @@
 		</section>
 
 		<section id="portfolio">
-			<div id="container">
-				<div id="content-wrapper">
-					<h1>Here are some things I've worked on.</h1>
+			<div class="container">
+				<div class="content-wrapper">
+					<h2>Here are some things I've worked on.</h2>
+						<div id="thumbnails">
+							<img src="/Users/meghan/github/MFreas/thumb-blog.jpg" height="265" width="350">
+						</div>
 				</div>
 			</div>	
 		</section>
 
 		<section id="contact">
-			<div id="container">
-				<div id="content-wrapper">
+			<div class="container">
+				<div class="content-wrapper">
 					<h1>Let's get in touch!</h1>
+					<ul id="social-icons">
+						<li><a href="mailto:meghanfreas@gmail.com"><img src="/Users/meghan/github/MFreas/icon_mail.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_twit.png" height="70" width="70"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_git.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_LI.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_insta.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_pin.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_yelp.png" height="60" width="60"></a></li>
+						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_unt.png" height="60" width="60"></a></li>
+					</ul>
+					<center>
+					<h2>+49 15159423460</h2>
+					<h2>meghanfreas@gmail.com</h2>
+				</center>
 				</div>
 			</div>	
 		</section>
 	</div>
 
 	<footer>
-		&copy; Meghan Freas 2015
+		<h3>&copy; Meghan Freas 2015</h3>
 	</footer>
 
 </div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script type="text/javascript" src="javascript/smoothscroll.js"></script>
+
 <script>
 	$(window).scroll(function() {
-		if ($(this).scrollTop() > 10) {
+		if ($(this).scrollTop() > 1) {
 			$('#navigation').addClass("sticky");
 		}
 		else {
 			$('#navigation').removeClass("sticky");
 		}
 	});
+
 </script>
+
 </body>
 </html>
