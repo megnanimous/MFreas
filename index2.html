@@ -52,12 +52,16 @@
 					<h2><span class="span-h2">Here are some things I've worked on.</span></h2>
 						<div id="thumbnails">
 							<div id="thumb-blog">
-								<img src="/Users/meghan/github/MFreas/thumb-blog.jpg" height="265" width="400">
-								<p>My Personal Blog</p>
+								<a href="http://www.megnanimously.com" target="_blank" alt="Megnanimously.com - An Expat Blog">
+								<img src="/Users/meghan/github/MFreas/thumb-blog.jpg">
+								</a>
+								<p>Megnanimously - Blog</p>
 							</div>
 							<div id="thumb-alex">
-								<img src="/Users/meghan/github/MFreas/thumb-alex.png" height="265" width="400">
-								<p>Professional Portfolio</p>
+								<a href="http://www.sashimiblade.com" target="_blank" alt="Sashimiblade.com - Alex Freas">
+								<img src="/Users/meghan/github/MFreas/thumb-alex.png">
+								</a>
+								<p>Sashimiblade.com - Portfolio</p>
 							</div>
 						</div>
 				</div>
@@ -80,7 +84,7 @@
 					</ul>
 					<center>
 					<h2 class="h2-contact">+49 15159423460</h2>
-					<h2 class="h2-contact">meghanfreas@gmail.com</h2>
+					<h2 class="h2-contact"><a href="mailto:meghanfreas@gmail.com">meghanfreas@gmail.com</a></h2>
 				</center>
 				</div>
 			</div>	
@@ -102,7 +106,7 @@
 		console.log(this.hash)
 		var slashedHash = '#/' + this.hash.slice(1);
 		$.smoothScroll({scrollTarget: this.hash,
-			offset: -100});
+			offset: -40});
 	});
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 1) {

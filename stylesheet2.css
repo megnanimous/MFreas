@@ -77,7 +77,7 @@ a:visited {
 }
 
 .main section .content-wrapper {
-	border: 1px solid;
+/*	border: 1px solid;*/
 	height: 600px;
 	width: 70%;
 	margin-top: 250px;
@@ -87,7 +87,7 @@ a:visited {
 }
 
 .main section#splash .content-wrapper-splash {
-	border: 1px solid;
+/*	border: 1px solid;*/
 	height: 600px;
 	width: 70%;
 	margin-top: 250px;
@@ -109,7 +109,7 @@ a:visited {
 	height: 800px;
 	width: 100%;
 	background-color: #ffffff;
-	margin-top: 50px;
+	display: inline-block;
 }
 
 /* Header */
@@ -214,10 +214,11 @@ nav ul li a {
 	transition: all 0.4s ease;
 }
 
+
 /* Portfolio */
 
 .main section#portfolio #thumbnails {
-	border: 1px solid black;
+/*	border: 1px solid black;*/
 	height: 430px;
 	margin-left: 60px;
 	margin-right: 60px;
@@ -241,6 +242,8 @@ nav ul li a {
 
 .main section#portfolio #thumbnails img {
 	border-bottom: 1px solid #ACACAC;
+	height: 265px;
+	width: 400px;
 }
 
 /* Contact */
@@ -264,10 +267,26 @@ nav ul li a {
 /* Footer */
 
 footer {
-	height: 80px;
+	height: 50px;
+	margin-top: 50px;
 }
 
 /* Media */
+
+@media (max-width: 1350px) {
+	.main section#portfolio #thumbnails {
+		height: 100%;
+		width: 50%;
+		margin-left: 25%;
+		margin-right: 25%;
+	}
+
+	.main section#portfolio #thumbnails #thumb-alex {
+		margin-top: 40px;
+		float: none;
+	}
+}
+
 @media (max-width: 1200px) {
 	nav ul li a {
 		font-size: 30px;
@@ -300,6 +319,13 @@ footer {
 	#navigation.sticky ul.menu-left {
 		margin-left: 8%;
 	}
+	.main section#portfolio #thumbnails {
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.main section#contact ul#social-icons {
+		margin-bottom: 15%;
+	}
 }
 
 @media (max-width: 850px) {
@@ -310,6 +336,12 @@ footer {
 	nav #logo {
 		height: 100px;
 		width: 100px;
+	}
+	.main section#contact ul#social-icons {
+		margin-left: 7%;
+	}
+	h2.h2-contact {
+		font-size: 35px;
 	}
 }
 
@@ -327,13 +359,16 @@ footer {
 	}
 	.main section .content-wrapper {
 		margin-top: 100px;
-		display: inline;
+		display: inline-block;
+		margin-left: 13%;
+		margin-right: auto;
+		width: 70%;
 	}
 	.main section#portfolio .container {
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 	.main section#contact .container {
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 	h2 {
 		font-size: 35px;
@@ -345,5 +380,27 @@ footer {
 		font-size: 30px;
 		padding-top: 55px;
 	}
+	.main section#portfolio #thumbnails {
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.main section#contact ul#social-icons {
+		margin-bottom: 55%;
+	}
 }
+
+@media (max-width: 550px) {
+	.main section#portfolio #thumbnails img {
+		height: 165px;
+		width: 300px;
+	}
+	.main section#portfolio #thumbnails #thumb-blog {
+		width: 300px;
+	}
+	.main section#portfolio #thumbnails #thumb-alex {
+		width: 300px;
+	}
+}
+
+
 
