@@ -28,6 +28,13 @@ h2 {
 	text-align: center;
 }
 
+h2.h2-contact {
+	font-family: "Gill Sans";
+	color: #ACACAC;
+	font-size: 45px;
+	text-align: center;
+}
+
 span.span-h2 {
 	font-family: "Gill Sans";
 	font-size: 45px;
@@ -40,6 +47,13 @@ h3 {
 	font-size: 14px;
 	color: #F46359;
 	text-align: center;
+}
+
+p {
+	font-size: 14px;
+	font-family: Georgia-serif;
+	text-align: center;
+	font-style: italic;
 }
 
 a:link {
@@ -118,7 +132,7 @@ a:visited {
 }
 
 nav ul.menu-left {
-	width: 400px;
+/*	width: 400px;*/
 	float: left;
 	margin-left: 12%;
 	margin-top: 50px;
@@ -127,7 +141,7 @@ nav ul.menu-left {
 }
 
 nav ul.menu-right {
-	width: 400px;
+/*	width: 400px;*/
 	float: right;
 	margin-right: 12%;
 	margin-top: 50px;
@@ -179,6 +193,7 @@ nav ul li a {
 
 #navigation.sticky ul {
 	margin-top: 20px;
+	padding-left: 0px;
 	transition: all 0.4s ease;
 }
 
@@ -197,6 +212,35 @@ nav ul li a {
 	height: 100px;
 	width: 100px;
 	transition: all 0.4s ease;
+}
+
+/* Portfolio */
+
+.main section#portfolio #thumbnails {
+	border: 1px solid black;
+	height: 430px;
+	margin-left: 60px;
+	margin-right: 60px;
+}
+
+.main section#portfolio #thumbnails #thumb-blog {
+/*	border: 1px solid yellow;*/
+	width: 400px;
+	display: inline-block;
+	float: left;
+	border-bottom: 1px solid #ACACAC;
+}
+
+.main section#portfolio #thumbnails #thumb-alex {
+/*	border: 1px solid yellow;*/
+	width: 400px;
+	display: inline-block;
+	float: right;
+	border-bottom: 1px solid #ACACAC;
+}
+
+.main section#portfolio #thumbnails img {
+	border-bottom: 1px solid #ACACAC;
 }
 
 /* Contact */
@@ -220,22 +264,86 @@ nav ul li a {
 /* Footer */
 
 footer {
-	text-align: center;
+	height: 80px;
 }
 
 /* Media */
-@media screen and (max-width: 800px) {
+@media (max-width: 1200px) {
+	nav ul li a {
+		font-size: 30px;
+	}
+
+	nav ul.menu-right {
+		margin-right: 6%;
+	}
 
 	#navigation.sticky ul li a {
-	font-size: 20px;
-	font-family: "Gill Sans";
-	transition: all 0.4s ease;
+		font-size: 20px;
+		font-family: "Gill Sans";
+		transition: all 0.4s ease;
+	}
+
+	#navigation.sticky #logo {
+		height: 70px;
+		width: 70px;
+		transition: all 0.4s ease;
+	}
 }
 
-#navigation.sticky #logo {
-	height: 70px;
-	width: 70px;
-	transition: all 0.4s ease;
+@media (max-width: 1000px) {
+	nav ul li a {
+		font-size: 25px;
+	}
+	nav ul.menu-left {
+		margin-left: 8%;
+	}
+	#navigation.sticky ul.menu-left {
+		margin-left: 8%;
+	}
 }
+
+@media (max-width: 850px) {
+	nav ul li a {
+		font-size: 20px;
+	}
+
+	nav #logo {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+
+@media (max-width: 700px) {
+	nav #logo {
+		height: 200px;
+		width: 200px;
+	}
+	nav ul.menu-left {
+		display: none;
+	}
+	nav ul.menu-right {
+		display: none;
+	}
+	.main section .content-wrapper {
+		margin-top: 100px;
+		display: inline;
+	}
+	.main section#portfolio .container {
+		margin-top: 100px;
+	}
+	.main section#contact .container {
+		margin-top: 100px;
+	}
+	h2 {
+		font-size: 35px;
+	}
+	span.span-h2 {
+		font-size: 35px;
+	}
+	h2.h2-contact {
+		font-size: 30px;
+		padding-top: 55px;
+	}
 }
 

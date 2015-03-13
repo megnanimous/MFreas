@@ -49,9 +49,16 @@
 		<section id="portfolio">
 			<div class="container">
 				<div class="content-wrapper">
-					<h2>Here are some things I've worked on.</h2>
+					<h2><span class="span-h2">Here are some things I've worked on.</span></h2>
 						<div id="thumbnails">
-							<img src="/Users/meghan/github/MFreas/thumb-blog.jpg" height="265" width="350">
+							<div id="thumb-blog">
+								<img src="/Users/meghan/github/MFreas/thumb-blog.jpg" height="265" width="400">
+								<p>My Personal Blog</p>
+							</div>
+							<div id="thumb-alex">
+								<img src="/Users/meghan/github/MFreas/thumb-alex.png" height="265" width="400">
+								<p>Professional Portfolio</p>
+							</div>
 						</div>
 				</div>
 			</div>	
@@ -72,8 +79,8 @@
 						<li><a href="ADD LINK"><img src="/Users/meghan/github/MFreas/icon_unt.png" height="60" width="60"></a></li>
 					</ul>
 					<center>
-					<h2>+49 15159423460</h2>
-					<h2>meghanfreas@gmail.com</h2>
+					<h2 class="h2-contact">+49 15159423460</h2>
+					<h2 class="h2-contact">meghanfreas@gmail.com</h2>
 				</center>
 				</div>
 			</div>	
@@ -87,9 +94,16 @@
 </div>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/smoothscroll.js"></script>
+<script type="text/javascript" src="jquery.smooth-scroll.js"></script>
 
 <script>
+
+	$(document).on('click', 'a[href*="#"]', function() {
+		console.log(this.hash)
+		var slashedHash = '#/' + this.hash.slice(1);
+		$.smoothScroll({scrollTarget: this.hash,
+			offset: -100});
+	});
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > 1) {
 			$('#navigation').addClass("sticky");
